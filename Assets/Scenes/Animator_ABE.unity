@@ -436,7 +436,6 @@ GameObject:
   - component: {fileID: 1144138027}
   - component: {fileID: 1144138026}
   - component: {fileID: 1144138025}
-  - component: {fileID: 1144138028}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -516,25 +515,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144138023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &1144138028
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144138023}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5845628fbbacf83438a6525b206229c8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1334267333
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +524,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334267334}
+  - component: {fileID: 1334267336}
+  - component: {fileID: 1334267335}
   m_Layer: 0
   m_Name: BARRERA
   m_TagString: Untagged
@@ -567,6 +549,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1334267335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334267333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.081423, y: 2.0795188, z: 3.3656678}
+  m_Center: {x: 1.5407114, y: 0.5397594, z: -0.0055799484}
+--- !u!114 &1334267336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334267333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1def7ca0342c68449a74c92bdef2d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1559614971}
 --- !u!1 &1559614969
 GameObject:
   m_ObjectHideFlags: 0
